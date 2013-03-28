@@ -1,0 +1,2 @@
+class XboxLive::Api
+end

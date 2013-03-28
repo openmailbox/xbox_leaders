@@ -3,7 +3,6 @@ require 'bundler/setup'
 Bundler.require(:default)
 
 module XboxLive
-  API_ROOT = 'http://xboxleaders.com/api'
 end
 
-require 'xbox_live/gamer'
+require 'xbox_live/api'
