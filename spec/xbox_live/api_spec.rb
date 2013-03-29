@@ -2,18 +2,6 @@ require 'spec_helper'
 
 describe XboxLive::Api do
   describe '#initialize' do
-    it 'allows a specified format' do
-      ['json', 'xml', 'php'].each do |format|
-        lambda { XboxLive::Api.new(format: format) }.should_not raise_exception
-      end
-      lambda { XboxLive::Api.new(format: 'foobar') }.should raise_exception
-    end
-
-    it 'defaults to a json format' do
-      api = XboxLive::Api.new
-      api.format.should == 'json'
-    end
-
     it 'allows a specified timeout in seconds' do
       api = XboxLive::Api.new(timeout: 10)
       api.timeout.should == 10
@@ -32,8 +20,16 @@ describe XboxLive::Api do
       lambda { api.fetch_profile('foobarbaz123') }.should raise_exception
     end
 
-    it 'fetches a profile'
-    it 'fetches a list of games'
+    it 'fetches a profile' do
+      response = XboxLive::Api.new.fetch_profile('nevern02')
+      response['IsValid'].should == 1
+    end
+
+    it 'fetches a list of games' do
+      response = XboxLive::Api.new.fetch_games('nevern02')
+      response['GameCount'].should be > 0
+    end
+
     it 'fetches a list of achievements'
     it 'fetches a list of friends'
   end

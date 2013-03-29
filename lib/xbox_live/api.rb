@@ -1,26 +1,35 @@
-class XboxLive::Api
-  FORMATS = %w(json xml php)
-  API_URI = 'https://www.xboxleaders.com/api'
+require 'httparty'
 
-  attr_accessor :format, :timeout
+class XboxLive::Api
+
+  include HTTParty
+  base_uri 'https://www.xboxleaders.com/api'
+  format :json
+
+  attr_accessor :timeout
   
-  def initialize(format: 'json', timeout: 6)
-    self.format = format
+  def initialize(timeout: 6)
     @timeout = timeout
   end
 
-  def format=(new_format)
-    unless FORMATS.include?(new_format)
-      raise ArgumentError, "Invalid format. Must be one of: #{FORMATS.join(', ')}."
-    end
-    @format = new_format
+  def fetch_profile(gamertag)
+    get('/profile', gamertag: gamertag)
   end
 
-  def fetch_profile(gamertag)
+  def fetch_games(gamertag)
+    get('/games', gamertag: gamertag)
   end
 
   private
 
-  def http(path, *args)
+  def get(path, query={})
+    response = self.class.get(path, timeout: timeout, query: query).to_hash
+
+    if response['error']
+      raise ArgumentError, response['error']['message']
+    end
+
+    response['Data']
   end
+
 end
