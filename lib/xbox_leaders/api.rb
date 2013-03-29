@@ -1,6 +1,6 @@
 require 'httparty'
 
-class XboxLive::Api
+class XboxLeaders::Api
 
   include HTTParty
   base_uri 'https://www.xboxleaders.com/api'
