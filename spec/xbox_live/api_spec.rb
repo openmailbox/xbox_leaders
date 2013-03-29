@@ -30,7 +30,14 @@ describe XboxLive::Api do
       response['GameCount'].should be > 0
     end
 
-    it 'fetches a list of achievements'
-    it 'fetches a list of friends'
+    it 'fetches a list of achievements' do
+      response = XboxLive::Api.new.fetch_achievements('nevern02', '1096157379')
+      response['Achievements'].should_not be_nil
+    end
+
+    it 'fetches a list of friends' do
+      response = XboxLive::Api.new.fetch_friends('nevern02')
+      response['Friends'].should_not be_nil
+    end
   end
 end

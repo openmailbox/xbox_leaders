@@ -12,12 +12,20 @@ class XboxLive::Api
     @timeout = timeout
   end
 
-  def fetch_profile(gamertag)
-    get('/profile', gamertag: gamertag)
+  def fetch_achievements(gamertag, game_id)
+    get('/achievements', gamertag: gamertag, titleid: game_id)
   end
 
+  def fetch_friends(gamertag)
+    get('/friends', gamertag: gamertag)
+  end
+  
   def fetch_games(gamertag)
     get('/games', gamertag: gamertag)
+  end
+
+  def fetch_profile(gamertag)
+    get('/profile', gamertag: gamertag)
   end
 
   private
@@ -25,8 +33,8 @@ class XboxLive::Api
   def get(path, query={})
     response = self.class.get(path, timeout: timeout, query: query).to_hash
 
-    if response['error']
-      raise ArgumentError, response['error']['message']
+    if error = response['error']
+      raise ArgumentError, error['message']
     end
 
     response['Data']
