@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    xbox_leaders (1.0.0)
+      httparty
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,6 +33,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  httparty
   pry
   rspec
+  xbox_leaders!
