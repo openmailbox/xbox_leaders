@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    xbox_leaders (1.0.1)
+    xbox_leaders (1.0.2)
       httparty
 
 GEM
