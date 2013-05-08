@@ -3,8 +3,7 @@ require 'httparty'
 class XboxLeaders::Api
 
   include HTTParty
-  base_uri 'https://www.xboxleaders.com/api'
-  format :json
+  base_uri 'https://www.xboxleaders.com/api/1.0'
 
   attr_accessor :timeout
   
@@ -31,10 +30,10 @@ class XboxLeaders::Api
   private
 
   def get(path, query={})
-    response = self.class.get(path, timeout: timeout, query: query).to_hash
+    response = self.class.get(path + ".json", timeout: timeout, query: query).to_hash
 
-    if error = response['error']
-      raise ArgumentError, error['message']
+    if error = response['Error']
+      raise ArgumentError, error
     end
 
     response['Data']

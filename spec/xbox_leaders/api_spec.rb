@@ -17,7 +17,7 @@ describe XboxLeaders::Api do
     it 'validates the gamertag' do
       api = XboxLeaders::Api.new
       lambda { api.fetch_profile('nevern02') }.should_not raise_exception
-      lambda { api.fetch_profile('foobarbaz123') }.should raise_exception
+      lambda { api.fetch_profile('fajdkfjdife99fgsd<F2>') }.should raise_exception
     end
 
     it 'fetches a profile' do
