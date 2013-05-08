@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    xbox_leaders (1.0.0)
+    xbox_leaders (1.0.1)
       httparty
 
 GEM
@@ -9,16 +9,17 @@ GEM
   specs:
     coderay (1.0.9)
     diff-lcs (1.2.1)
-    httparty (0.10.2)
+    httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
     method_source (0.8.1)
-    multi_json (1.7.2)
+    multi_json (1.7.3)
     multi_xml (0.5.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
+    rake (10.0.4)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -34,5 +35,6 @@ PLATFORMS
 
 DEPENDENCIES
   pry
+  rake
   rspec
   xbox_leaders!
