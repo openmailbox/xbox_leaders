@@ -12,7 +12,7 @@ class XboxLeaders::Api
   end
 
   def fetch_achievements(gamertag, game_id)
-    get('/achievements', gamertag: gamertag, titleid: game_id)
+    get('/achievements', gamertag: gamertag, gameid: game_id)
   end
 
   def fetch_friends(gamertag)
