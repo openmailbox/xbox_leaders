@@ -7,7 +7,7 @@ class XboxLeaders::Api
 
   attr_accessor :timeout
   
-  def initialize(timeout: 6)
+  def initialize(timeout = 6)
     @timeout = timeout
   end
 
