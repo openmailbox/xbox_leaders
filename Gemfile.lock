@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    xbox_leaders (1.0.2)
+    xbox_leaders (1.1.0)
       httparty
 
 GEM
@@ -13,7 +13,7 @@ GEM
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
     method_source (0.8.1)
-    multi_json (1.7.3)
+    multi_json (1.8.0)
     multi_xml (0.5.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
