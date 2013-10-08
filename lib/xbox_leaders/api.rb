@@ -11,8 +11,8 @@ class XboxLeaders::Api
     @timeout = timeout
   end
 
-  def fetch_achievements(gamertag, game_id)
-    get('/achievements', gamertag: gamertag, gameid: game_id)
+  def fetch_achievements(game_id, gamertag)
+    get('/achievements', gameid: game_id, gamertag: gamertag)
   end
 
   def fetch_friends(gamertag)
