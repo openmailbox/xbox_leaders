@@ -3,7 +3,7 @@ require 'spec_helper'
 describe XboxLeaders::Api do
   describe '#initialize' do
     it 'allows a specified timeout in seconds' do
-      api = XboxLeaders::Api.new(timeout: 10)
+      api = XboxLeaders::Api.new(10)
       api.timeout.should == 10
     end
 
