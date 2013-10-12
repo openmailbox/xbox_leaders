@@ -3,7 +3,7 @@ require 'httparty'
 class XboxLeaders::Api
 
   include HTTParty
-  base_uri 'https://www.xboxleaders.com/api/1.0'
+  base_uri 'https://www.xboxleaders.com/api/2.0'
 
   attr_accessor :timeout
   
@@ -12,7 +12,7 @@ class XboxLeaders::Api
   end
 
   def fetch_achievements(gamertag, game_id)
-    get('/achievements', gamertag: gamertag, titleid: game_id)
+    get('/achievements', gamertag: gamertag, gameid: game_id)
   end
 
   def fetch_friends(gamertag)
@@ -32,11 +32,11 @@ class XboxLeaders::Api
   def get(path, query={})
     response = self.class.get(path + ".json", timeout: timeout, query: query).to_hash
 
-    if error = response['Error']
-      raise ArgumentError, error
+    if response['status'] == 'error'
+      raise ArgumentError, "#{response['data']['code']}: #{response['data']['message']}"
     end
 
-    response['Data']
+    response['data']
   end
 
 end
