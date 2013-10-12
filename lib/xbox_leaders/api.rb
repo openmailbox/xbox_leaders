@@ -7,12 +7,12 @@ class XboxLeaders::Api
 
   attr_accessor :timeout
   
-  def initialize(timeout: 6)
+  def initialize(timeout = 6)
     @timeout = timeout
   end
 
-  def fetch_achievements(gamertag, game_id)
-    get('/achievements', gamertag: gamertag, gameid: game_id)
+  def fetch_achievements(game_id, gamertag)
+    get('/achievements', gamertag: gamertag, titleid: game_id)
   end
 
   def fetch_friends(gamertag)
