@@ -1,4 +1,5 @@
 # XboxLeaders
+[![Gem Version](https://badge.fury.io/rb/xbox_leaders.svg)](http://badge.fury.io/rb/xbox_leaders)
 
 This is a wrapper around the Xbox Live API provided for free at [https://www.xboxleaders.com/](https://www.xboxleaders.com/).
 
