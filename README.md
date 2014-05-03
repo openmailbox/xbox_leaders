@@ -2,6 +2,9 @@
 
 This is a wrapper around the Xbox Live API provided for free at [https://www.xboxleaders.com/](https://www.xboxleaders.com/).
 
+__NOTE:__ The free Xbox Leaders API was scheduled to be shutdown on 4/30/2014. The source code remains available for download on 
+[Github](https://github.com/XboxLeaders/XboxLiveAPI). Using this client requires access to a live endpoint.
+
 ## Installation
 
 Add this line to your application's Gemfile:
