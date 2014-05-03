@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.xboxleaders.com/api/2.0/profile.json?gamertag=Major%20Nelson
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      date:
+      - Sat, 03 May 2014 01:57:32 GMT
+      server:
+      - Apache/2.2.22 (Ubuntu)
+      location:
+      - https://www.xboxleaders.com/api/profile.json?gamertag=Major%20Nelson
+      cache-control:
+      - max-age=0
+      expires:
+      - Sat, 03 May 2014 01:57:32 GMT
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '362'
+      connection:
+      - close
+      content-type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="https://www.xboxleaders.com/api/profile.json?gamertag=Major%20Nelson">here</a>.</p>
+        <hr>
+        <address>Apache/2.2.22 (Ubuntu) Server at www.xboxleaders.com Port 443</address>
+        </body></html>
+    http_version: '1.1'
+  recorded_at: Sat, 03 May 2014 01:57:32 GMT
+- request:
+    method: get
+    uri: https://www.xboxleaders.com/api/profile.json?gamertag=Major%20Nelson
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 03 May 2014 01:57:32 GMT
+      server:
+      - Apache/2.2.22 (Ubuntu)
+      x-powered-by:
+      - PHP/5.4.27-1+deb.sury.org~precise+1
+      access-control-allow-origin:
+      - "*"
+      access-control-max-age:
+      - '3628800'
+      cache-control:
+      - no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform
+      expires:
+      - Sat, 03 May 2014 01:57:32 GMT
+      pragma:
+      - no-cache
+      content-length:
+      - '1209'
+      connection:
+      - close
+      content-type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "status": "success",
+            "version": "2.0",
+            "data": {
+                "gamertag": "Major Nelson",
+                "tier": "gold",
+                "badges": {
+                    "xboxlaunchteam": true,
+                    "nxelaunchteam": true,
+                    "kinectlaunchteam": true
+                },
+                "avatar": {
+                    "full": "http://avatar.xboxlive.com/avatar/Major Nelson/avatar-body.png",
+                    "small": "http://avatar.xboxlive.com/avatar/Major Nelson/avatarpic-s.png",
+                    "large": "http://avatar.xboxlive.com/avatar/Major Nelson/avatarpic-l.png",
+                    "tile": "http://avatar.xboxlive.com/avatar/Major%20Nelson/avatarpic-l.png"
+                },
+                "gamerscore": 68567,
+                "reputation": 20,
+                "presence": "Last seen 7 hours ago playing Xbox.com",
+                "online": false,
+                "motto": "Find me @majornelson",
+                "name": "Larry Hryb, Xbox LIVE&#39;s Major Nelson",
+                "location": "In your Xbox",
+                "biography": "Yes I work for Xbox. Please send text messages only since it&#39;s easier for me to respond. If you need help be sure to follow Xbox Support on Twitter. Twitter.com/@Xboxsupport",
+                "recentactivity": null,
+                "freshness": "new"
+            },
+            "runtime": 2.743
+        }
+    http_version: '1.1'
+  recorded_at: Sat, 03 May 2014 01:57:35 GMT
+recorded_with: VCR 2.9.0

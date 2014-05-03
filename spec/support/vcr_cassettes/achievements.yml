@@ -1,0 +1,1314 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.xboxleaders.com/api/2.0/achievements.json?gamertag=Major%20Nelson&gameid=1297287449
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      date:
+      - Sat, 03 May 2014 02:00:40 GMT
+      server:
+      - Apache/2.2.22 (Ubuntu)
+      location:
+      - https://www.xboxleaders.com/api/achievements.json?gamertag=Major%20Nelson&gameid=1297287449
+      cache-control:
+      - max-age=0
+      expires:
+      - Sat, 03 May 2014 02:00:40 GMT
+      vary:
+      - Accept-Encoding
+      content-length:
+      - '389'
+      connection:
+      - close
+      content-type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="https://www.xboxleaders.com/api/achievements.json?gamertag=Major%20Nelson&amp;gameid=1297287449">here</a>.</p>
+        <hr>
+        <address>Apache/2.2.22 (Ubuntu) Server at www.xboxleaders.com Port 443</address>
+        </body></html>
+    http_version: '1.1'
+  recorded_at: Sat, 03 May 2014 02:00:40 GMT
+- request:
+    method: get
+    uri: https://www.xboxleaders.com/api/achievements.json?gamertag=Major%20Nelson&gameid=1297287449
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 03 May 2014 02:00:40 GMT
+      server:
+      - Apache/2.2.22 (Ubuntu)
+      x-powered-by:
+      - PHP/5.4.27-1+deb.sury.org~precise+1
+      access-control-allow-origin:
+      - "*"
+      access-control-max-age:
+      - '3628800'
+      cache-control:
+      - no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, no-transform
+      expires:
+      - Sat, 03 May 2014 02:00:40 GMT
+      pragma:
+      - no-cache
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "status": "success",
+            "version": "2.0",
+            "data": {
+                "gamertag": "Major Nelson",
+                "game": "Halo 4",
+                "id": 1297287449,
+                "hid": "4d530919",
+                "gamerscore": {
+                    "current": 845,
+                    "total": 2000
+                },
+                "achievement": {
+                    "current": 44,
+                    "total": 86
+                },
+                "progress": 51,
+                "lastplayed": 1378527782,
+                "achievements": [
+                    {
+                        "id": 192,
+                        "title": "Got it!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/oY/Tb/1Tc8P2NhbC8VCgVLBRxYWlA5L2FjaC8wLzEwYQAAAAFQUFD69IS8.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/10a"
+                        },
+                        "description": "In Bullseye DLC matchmaking, acquire the Rocket Launcher at the start of a match on Pitfall.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1377929443,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 155,
+                        "title": "I Thrust at Thee",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/nV/iw/0Tc8P2NhbC8XXhtUGltTWDE5L2FjaC8wL2RjAAAAAVBQUP6fWIE=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/dc"
+                        },
+                        "description": "In Majestic DLC matchmaking, perform a melee kill right after using Thrust Pack.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1371709906,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 169,
+                        "title": "Ashes to Ashes",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/mD/im/0jc8P2NhbC9EXBtUGltTWDE5L2FjaC8wL2YwAAAAAVBQUP2JOIQ=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/f0"
+                        },
+                        "description": "In Castle DLC matchmaking, disintegrate 6 enemies using Forerunner weapons.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1368077965,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 172,
+                        "title": "Scrapyard",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/LT/GH/0Dc8P2NhbC9HXBtUGltTWDE5L2FjaC8wL2YzAAAAAVBQUP+oMTE=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/f3"
+                        },
+                        "description": "In Castle DLC matchmaking, destroy 2 vehicles during a single game.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1367104831,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 165,
+                        "title": "What Is Yours Is Also Mine",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/36/E-/1zc8P2NhbC8XXxtUGltTWDE5L2FjaC8wL2VjAAAAAVBQUPgQocM=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ec"
+                        },
+                        "description": "In Castle DLC matchmaking, disable a vehicle and then hijack it.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1365832633,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 171,
+                        "title": "Sight Seeing",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/vs/ln/0Tc8P2NhbC9GXBtUGltTWDE5L2FjaC8wL2YyAAAAAVBQUP5IyaI=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/f2"
+                        },
+                        "description": "In Castle DLC matchmaking, complete a match in any mode for each Castle map.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1365483678,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 152,
+                        "title": "Pigs Can Fly",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/fe/o3/1zc8P2NhbC9AXxtUGltTWDE5L2FjaC8wL2U0AAAAAVBQUPgY6mE=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/e4"
+                        },
+                        "description": "In Majestic DLC matchmaking, kill 3 enemies while they are using Jet Packs.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1363501188,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 154,
+                        "title": "Callin&#039; in the Big Guns",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Dq/BQ/0Dc8P2NhbC8WXhtUGltTWDE5L2FjaC8wL2RiAAAAAVBQUP9-oBI=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d"
+                        },
+                        "description": "In Majestic DLC matchmaking, call in 3 ordnance drops during the same game.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1363148735,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 147,
+                        "title": "Bullet Sponge",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Qk/LT/1zc8P2NhbC8SXhtUGltTWDE5L2FjaC8wL2RmAAAAAVBQUPj8Ql4=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/df"
+                        },
+                        "description": "In Majestic DLC matchmaking, get the &#039;Close Call&#039; medal twice during one match.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1362120601,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 104,
+                        "title": "The Challenger",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/lJ/k+/0Dc8P2NhbC9HWBtUGltTWDE5L2FjaC8wL2IzAAAAAVBQUP8RmYg=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b3"
+                        },
+                        "description": "Complete 25 Challenges.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1359867386,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 96,
+                        "title": "Dedicated to Crimson",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/9f/Fm/1jc8P2NhbC8WWxtUGltTWDE5L2FjaC8wL2FiAAAAAVBQUPlJ8ek=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ab"
+                        },
+                        "description": "Complete all chapters in any 5 episodes of Spartan Ops on any difficulty.",
+                        "gamerscore": 80,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1359253778,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 141,
+                        "title": "Special Delivery",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/ih/qZ/0zc8P2NhbC9DXhtUGltTWDE5L2FjaC8wL2Q3AAAAAVBQUPy2GpY=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d7"
+                        },
+                        "description": "In Crimson DLC matchmaking, kill an enemy with melee when landing from a Man Cannon.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1355641159,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 135,
+                        "title": "ODST",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/4A/nb/1zc8P2NhbC9FXhtUGltTWDE5L2FjaC8wL2QxAAAAAVBQUPj0Cfw=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d1"
+                        },
+                        "description": "In Crimson DLC matchmaking, kill a player while airborne from a Man Cannon.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1355641159,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 139,
+                        "title": "Pump Yer Brakes",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/rO/tY/0Dc8P2NhbC9BXhtUGltTWDE5L2FjaC8wL2Q1AAAAAVBQUP9367A=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d5"
+                        },
+                        "description": "In Crimson DLC matchmaking, score the killing blow on a Mantis.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1355614691,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 138,
+                        "title": "David and Goliath",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Px/O4/0Tc8P2NhbC9AXhtUGltTWDE5L2FjaC8wL2Q0AAAAAVBQUP6XEyM=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d4"
+                        },
+                        "description": "In Crimson DLC matchmaking, board an enemy Mantis.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1355614684,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 77,
+                        "title": "Bropocalypse",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Fh/wF/1zc8P2NhbC9MAxtUGltTWDE5L2FjaC8wLzk4AAAAAVBQUPgqHAo=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/98"
+                        },
+                        "description": "Complete any Campaign mission cooperatively on Heroic or harder.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1354259015,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 97,
+                        "title": "Crimson Alone",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Zg/mG/1zc8P2NhbC8XWxtUGltTWDE5L2FjaC8wL2FjAAAAAVBQUPipCXo=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ac"
+                        },
+                        "description": "Complete a Spartan Ops chapter solo on Legendary.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1354082496,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 100,
+                        "title": "Knight in White Assassination",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/uR/Pl/0Tc8P2NhbC8SWxtUGltTWDE5L2FjaC8wL2FmAAAAAVBQUP7KE6U=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/af"
+                        },
+                        "description": "Assassinate a Knight in any Spartan Ops mission.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1352962034,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 99,
+                        "title": "No One Left Behind",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/DB/rE/0zc8P2NhbC8RWxtUGltTWDE5L2FjaC8wL2FlAAAAAVBQUPzrGhA=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ae"
+                        },
+                        "description": "Save at least one Marine in Chapter 3 of Episode 2 of Spartan Ops on Heroic or harder.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1352880114,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 80,
+                        "title": "Digging up the Past",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/D0/oL/1jc8P2NhbC8XAxtUGltTWDE5L2FjaC8wLzljAAAAAVBQUPkkShM=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/9c"
+                        },
+                        "description": "In mission 1, find and access Chief&#039;s record.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1352622447,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 131,
+                        "title": "Sharing is Caring",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/zz/mU/1Tc8P2NhbC8XWBtUGltTWDE5L2FjaC8wL2JjAAAAAVBQUPq7OdM=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/bc"
+                        },
+                        "description": "Upload a File to your File Share.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1352583604,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 95,
+                        "title": "A Legendary Episode",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/QP/hH/1Dc8P2NhbC8VWxtUGltTWDE5L2FjaC8wL2FhAAAAAVBQUPto+Fw=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/aa"
+                        },
+                        "description": "Complete all chapters in Spartan Ops Episode 1 on Legendary difficulty.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1352353311,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 93,
+                        "title": "Hanging on the Combat Deck",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/f1/+I/1jc8P2NhbC9MWxtUGltTWDE5L2FjaC8wL2E4AAAAAVBQUPmnX2M=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a8"
+                        },
+                        "description": "Win 20 War Games matchmaking matches.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1352270753,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 91,
+                        "title": "Movin&#039; On Up",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/4r/NP/1Dc8P2NhbC9CWxtUGltTWDE5L2FjaC8wL2E2AAAAAVBQUPtgs-4=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a"
+                        },
+                        "description": "Rank up your Spartan-IV to SR-20.",
+                        "gamerscore": 25,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351924516,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 103,
+                        "title": "The Challenged",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/B2/He/0Tc8P2NhbC9GWBtUGltTWDE5L2FjaC8wL2IyAAAAAVBQUP7xYRs=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b2"
+                        },
+                        "description": "Complete a Challenge.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351748708,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 108,
+                        "title": "What a Poser!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/2H/u9/1zc8P2NhbC9DWBtUGltTWDE5L2FjaC8wL2I3AAAAAVBQUPiSe8Q=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b7"
+                        },
+                        "description": "Change your Spartan&#039;s pose in the Spartan ID card.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351746196,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 92,
+                        "title": "I &lt;3 Red vs Blue",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/cU/uv/1Tc8P2NhbC9DWxtUGltTWDE5L2FjaC8wL2E3AAAAAVBQUPqAS20=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a7"
+                        },
+                        "description": "Win 5 War Games matchmaking matches.",
+                        "gamerscore": 15,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351743623,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 112,
+                        "title": "The Director",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/XM/F0/1Dc8P2NhbC8WWBtUGltTWDE5L2FjaC8wL2JiAAAAAVBQUPtbwUA=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/bb"
+                        },
+                        "description": "Save a Film Clip from the Theater.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351480595,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 111,
+                        "title": "Snapshot!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/6c/hV/1jc8P2NhbC8VWBtUGltTWDE5L2FjaC8wL2JhAAAAAVBQUPl6yPU=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ba"
+                        },
+                        "description": "Save a Screenshot from the Theater.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351480344,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 105,
+                        "title": "Armorer",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/bX/Kc/1Tc8P2NhbC9AWBtUGltTWDE5L2FjaC8wL2I0AAAAAVBQUPqzcnE=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b4"
+                        },
+                        "description": "Change your Spartan&#039;s armor in the Spartan Armor card.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351479107,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 94,
+                        "title": "Operation Completion",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/7K/do/1zc8P2NhbC9NWxtUGltTWDE5L2FjaC8wL2E5AAAAAVBQUPhHp-A=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a"
+                        },
+                        "description": "Complete a Spartan Ops Mission on any difficulty.",
+                        "gamerscore": 15,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351463233,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 72,
+                        "title": "Wake Up, John",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/VO/qh/0zc8P2NhbC9HAxtUGltTWDE5L2FjaC8wLzkzAAAAAVBQUPyO6kg=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/93"
+                        },
+                        "description": "Complete the Campaign on Normal or harder.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351408284,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 71,
+                        "title": "Midnight",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/xx/JB/0jc8P2NhbC9GAxtUGltTWDE5L2FjaC8wLzkyAAAAAVBQUP1uEts=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/92"
+                        },
+                        "description": "Complete mission 8 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351408284,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 70,
+                        "title": "Composer",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/ch/tg/0Dc8P2NhbC9FAxtUGltTWDE5L2FjaC8wLzkxAAAAAVBQUP9PG24=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/91"
+                        },
+                        "description": "Complete mission 7 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351400839,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 69,
+                        "title": "Shutdown",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/4e/OA/0Tc8P2NhbC9EAxtUGltTWDE5L2FjaC8wLzkwAAAAAVBQUP6v4-0=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/9"
+                        },
+                        "description": "Complete mission 6 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351393778,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 68,
+                        "title": "Reclaimer",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/kq/nn/1jc8P2NhbC8SAhtUGltTWDE5L2FjaC8wLzhmAAAAAVBQUPnIqY4=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/8f"
+                        },
+                        "description": "Complete mission 5 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351370571,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 67,
+                        "title": "Infinity",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/J6/DG/1Dc8P2NhbC8RAhtUGltTWDE5L2FjaC8wLzhlAAAAAVBQUPvpoDs=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/8e"
+                        },
+                        "description": "Complete mission 4 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351320725,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 66,
+                        "title": "Forerunner",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/tF/gm/1Tc8P2NhbC8QAhtUGltTWDE5L2FjaC8wLzhkAAAAAVBQUPoJWKg=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/8d"
+                        },
+                        "description": "Complete mission 3 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351316351,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 78,
+                        "title": "Contact the Domain",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Kb/vK/1Tc8P2NhbC8VAxtUGltTWDE5L2FjaC8wLzlhAAAAAVBQUPrluzU=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/9a"
+                        },
+                        "description": "Find a Terminal in the Campaign.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351230028,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 90,
+                        "title": "Not Some Recruit Anymore",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/V7/pu/1jc8P2NhbC9BWxtUGltTWDE5L2FjaC8wL2E1AAAAAVBQUPlBuks=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a5"
+                        },
+                        "description": "Rank up your Spartan-IV to SR-5.",
+                        "gamerscore": 15,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351139209,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 65,
+                        "title": "Requiem",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Tb/OE/0Dc8P2NhbC8XAhtUGltTWDE5L2FjaC8wLzhjAAAAAVBQUP+rs1E=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/8c"
+                        },
+                        "description": "Complete mission 2 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351137891,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 106,
+                        "title": "Badge",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/-o/p8/1Dc8P2NhbC9BWBtUGltTWDE5L2FjaC8wL2I1AAAAAVBQUPtTiuI=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b5"
+                        },
+                        "description": "Change your Emblem in the Spartan ID card.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351059125,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 107,
+                        "title": "PWND",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/S4/Nd/1jc8P2NhbC9CWBtUGltTWDE5L2FjaC8wL2I2AAAAAVBQUPlyg1c=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b6"
+                        },
+                        "description": "Change your Service Tag in the Spartan ID card.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351059068,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 64,
+                        "title": "Dawn",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/3k/tk/0Tc8P2NhbC8WAhtUGltTWDE5L2FjaC8wLzhiAAAAAVBQUP5LS8I=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/8b"
+                        },
+                        "description": "Complete mission 1 on any difficulty.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": true,
+                        "unlockdate": 1351055985,
+                        "unlockedoffline": false
+                    },
+                    {
+                        "id": 73,
+                        "title": "I Need a Hero",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/rQ/ED/1jc8P2NhbC9AAxtUGltTWDE5L2FjaC8wLzk0AAAAAVBQUPksAbE=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/94"
+                        },
+                        "description": "Complete the Campaign on Heroic or harder.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 74,
+                        "title": "The Legend of 117",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Pv/nj/1zc8P2NhbC9BAxtUGltTWDE5L2FjaC8wLzk1AAAAAVBQUPjM+SI=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/95"
+                        },
+                        "description": "Complete the Campaign on Legendary difficulty.",
+                        "gamerscore": 70,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 75,
+                        "title": "Lone Wolf Legend",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/i-/DC/1Tc8P2NhbC9CAxtUGltTWDE5L2FjaC8wLzk2AAAAAVBQUPrt8Jc=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/96"
+                        },
+                        "description": "Complete the Campaign solo on Legendary difficulty.",
+                        "gamerscore": 90,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 76,
+                        "title": "Skullduggery",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/GA/gi/1Dc8P2NhbC9DAxtUGltTWDE5L2FjaC8wLzk3AAAAAVBQUPsNCAQ=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/97"
+                        },
+                        "description": "Complete any Campaign mission with 3 or more Skulls on Heroic or harder.",
+                        "gamerscore": 15,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 79,
+                        "title": "Terminus",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/nL/Lr/1zc8P2NhbC8WAxtUGltTWDE5L2FjaC8wLzliAAAAAVBQUPjEsoA=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/9b"
+                        },
+                        "description": "Find all of the Terminals in the Campaign.",
+                        "gamerscore": 50,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 81,
+                        "title": "Midnight Launch",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/9q/Gp/0zc8P2NhbC8QAxtUGltTWDE5L2FjaC8wLzlkAAAAAVBQUPyGoeo=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/9d"
+                        },
+                        "description": "In mission 2, get significant air in the Warthog at midnight.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 82,
+                        "title": "This is my Rifle, This is my Gun",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/ZV/lJ/0jc8P2NhbC8RAxtUGltTWDE5L2FjaC8wLzllAAAAAVBQUP1mWXk=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/9e"
+                        },
+                        "description": "In mission 3, carry a UNSC weapon all the way through on Heroic or harder.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 83,
+                        "title": "Bros to the Close",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/0F/Bo/0Dc8P2NhbC8SAxtUGltTWDE5L2FjaC8wLzlmAAAAAVBQUP9HUMw=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/9f"
+                        },
+                        "description": "Complete mission 4 without one preventable Marine death on Heroic or harder.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 84,
+                        "title": "Mortardom",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/iK/AN/0Dc8P2NhbC9EWxtUGltTWDE5L2FjaC8wL2EwAAAAAVBQUP8ioJQ=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a0"
+                        },
+                        "description": "In mission 5, steal a Wraith and use it to kill at least four enemy Wraiths on Heroic or harder.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 86,
+                        "title": "Explore the Floor",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/rl/HM/0zc8P2NhbC9GWxtUGltTWDE5L2FjaC8wL2EyAAAAAVBQUPzjUbI=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a2"
+                        },
+                        "description": "In mission 6, trick or force a Hunter to fall to his demise.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 88,
+                        "title": "Give Him the Stick",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Pa/ks/0jc8P2NhbC9HWxtUGltTWDE5L2FjaC8wL2EzAAAAAVBQUP0DqSE=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a3"
+                        },
+                        "description": "In Mission 7, in solo Campaign, take out both Hunters using only the Sticky Detonator.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 89,
+                        "title": "Chief, Smash!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/xE/KO/1zc8P2NhbC9AWxtUGltTWDE5L2FjaC8wL2E0AAAAAVBQUPihQtg=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/a4"
+                        },
+                        "description": "In mission 8, kill 3 Crawlers in one hit with the Gravity Hammer.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 98,
+                        "title": "Roses vs Violets",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/n+/Ik/0jc8P2NhbC8QWxtUGltTWDE5L2FjaC8wL2FkAAAAAVBQUP0L4oM=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ad"
+                        },
+                        "description": "Find one of the RvB Easter Eggs in Episodes 1 to 5 of Spartan Ops.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 101,
+                        "title": "What Power Outage?",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/IZ/Af/0jc8P2NhbC9EWBtUGltTWDE5L2FjaC8wL2IwAAAAAVBQUP0wkD0=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b0"
+                        },
+                        "description": "Complete Chapter 4, Episode 5 of Spartan Ops without losing a generator on Heroic or harder.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 102,
+                        "title": "No Easy Way Out",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/sm/j-/0zc8P2NhbC9FWBtUGltTWDE5L2FjaC8wL2IxAAAAAVBQUPzQaK4=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b1"
+                        },
+                        "description": "In Ch 1, Ep 5 of Spartan Ops survive the enemy assault during the defense on Normal or harder.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 109,
+                        "title": "The Cartographer",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/1m/+a/1Dc8P2NhbC9MWBtUGltTWDE5L2FjaC8wL2I4AAAAAVBQUPu1b8o=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b8"
+                        },
+                        "description": "Create and save a Custom Map in Forge.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 110,
+                        "title": "Game Changer",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/RZ/d6/1Tc8P2NhbC9NWBtUGltTWDE5L2FjaC8wL2I5AAAAAVBQUPpVl1k=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/b9"
+                        },
+                        "description": "Create and save a Custom Game type in War Games.",
+                        "gamerscore": 5,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 132,
+                        "title": "Bromageddon",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/he/Tl/1jc8P2NhbC9NAxtUGltTWDE5L2FjaC8wLzk5AAAAAVBQUPnK5Jk=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/99"
+                        },
+                        "description": "Complete the Campaign cooperatively on Heroic or harder.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 133,
+                        "title": "Now they Fly?",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Ut/p4/1Tc8P2NhbC8SWRtUGltTWDE5L2FjaC8wL2NmAAAAAVBQUPpX2k4=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/cf"
+                        },
+                        "description": "In Crimson DLC matchmaking, get a kill while airborne in a Warthog.",
+                        "gamerscore": 50,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 134,
+                        "title": "Size is Everything",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/c-/E7/1jc8P2NhbC9EXhtUGltTWDE5L2FjaC8wL2QwAAAAAVBQUPkU8W8=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d0"
+                        },
+                        "description": "In Crimson DLC matchmaking, kill 20 enemies with a detached Machine Gun Turret.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 137,
+                        "title": "Bigfoot",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/xv/ga/1Dc8P2NhbC9HXhtUGltTWDE5L2FjaC8wL2QzAAAAAVBQUPs1+No=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d3"
+                        },
+                        "description": "In Crimson DLC matchmaking, kill 20 enemies using the Mantis&#039; stomp attack.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 140,
+                        "title": "Clay Pigeon",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Ge/J5/0jc8P2NhbC9CXhtUGltTWDE5L2FjaC8wL2Q2AAAAAVBQUP1W4gU=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/d6"
+                        },
+                        "description": "In Crimson DLC matchmaking, shoot an enemy who&rsquo;s airborne from a Man Cannon.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 143,
+                        "title": "Didn&#039;t See It Comin&#039;",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/ZL/MS/1Dc8P2NhbC8QXhtUGltTWDE5L2FjaC8wL2RkAAAAAVBQUPs9s3g=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/dd"
+                        },
+                        "description": "In Majestic DLC matchmaking, assassinate an enemy who&#039;s in zoom mode.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 146,
+                        "title": "Bird of Prey",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/90/vy/1Tc8P2NhbC8RXhtUGltTWDE5L2FjaC8wL2RlAAAAAVBQUPrdS+s=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/de"
+                        },
+                        "description": "In Majestic DLC matchmaking, perform 5 &#039;airsassinations.&#039;",
+                        "gamerscore": 50,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 148,
+                        "title": "I See You!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/MQ/i0/0Dc8P2NhbC9EXxtUGltTWDE5L2FjaC8wL2UwAAAAAVBQUP+bCC0=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/e0"
+                        },
+                        "description": "In Majestic DLC matchmaking, kill 5 enemies while Promethean Vision is active.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 149,
+                        "title": "Clever Girl",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/ov/BU/0Tc8P2NhbC9FXxtUGltTWDE5L2FjaC8wL2UxAAAAAVBQUP578L4=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/e1"
+                        },
+                        "description": "In Majestic DLC matchmaking, kill 5 enemies while Active Camo is active.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 150,
+                        "title": "Flash of Light",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/F-/l1/0zc8P2NhbC9GXxtUGltTWDE5L2FjaC8wL2UyAAAAAVBQUPxa+Qs=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/e2"
+                        },
+                        "description": "In Majestic DLC matchmaking, get a Double Kill or higher with one Pulse Grenade.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 151,
+                        "title": "Last Man Grinning",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/hA/GV/0jc8P2NhbC9HXxtUGltTWDE5L2FjaC8wL2UzAAAAAVBQUP26AZg=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/e3"
+                        },
+                        "description": "In Majestic DLC matchmaking, get 4 kills using the SAW without dying.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 166,
+                        "title": "Dodge This!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Jk/qd/0jc8P2NhbC8QXxtUGltTWDE5L2FjaC8wL2VkAAAAAVBQUP2ySjo=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ed"
+                        },
+                        "description": "In Castle DLC matchmaking, get two direct Spartan Laser kills in one match.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 167,
+                        "title": "Hello Nurse!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/tb/J9/0zc8P2NhbC8RXxtUGltTWDE5L2FjaC8wL2VlAAAAAVBQUPxSsqk=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ee"
+                        },
+                        "description": "In Castle DLC matchmaking, heal a near-death teammate with Regen Field 5 times.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 168,
+                        "title": "That Won&#039;t Save You",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/AL/tc/0Tc8P2NhbC8SXxtUGltTWDE5L2FjaC8wL2VmAAAAAVBQUP5zuxw=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/ef"
+                        },
+                        "description": "In Castle DLC matchmaking, assassinate an enemy who is using a Hardlight Shield.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 170,
+                        "title": "Beating Up the Beat",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/C8/BG/0zc8P2NhbC9FXBtUGltTWDE5L2FjaC8wL2YxAAAAAVBQUPxpwBc=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/f1"
+                        },
+                        "description": "In Castle DLC matchmaking, perform 5 melee kills in a single match.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 173,
+                        "title": "Outta My Way!",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/1N/ol/1Tc8P2NhbC9AXBtUGltTWDE5L2FjaC8wL2Y0AAAAAVBQUPoK2sg=.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/f4"
+                        },
+                        "description": "In Castle DLC matchmaking, kill 5 enemies during a match by running them over.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 183,
+                        "title": "Protect This House",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/+i/Rx/0Dc8P2NhbC9FCgVLBRxYWlA5L2FjaC8wLzEwMQAAAAFQUFD-XiTn.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/10"
+                        },
+                        "description": "In matchmaking, assassinate the ball carrier within five meters of your own goal in Ricochet.",
+                        "gamerscore": 30,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 184,
+                        "title": "Hat Trick",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Ty/1Q/0jc8P2NhbC9GCgVLBRxYWlA5L2FjaC8wLzEwMgAAAAFQUFD9fy1S.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/102"
+                        },
+                        "description": "In matchmaking, score three times in one round of Ricochet.",
+                        "gamerscore": 33,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 185,
+                        "title": "From Downtown",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/3N/Ww/0zc8P2NhbC9HCgVLBRxYWlA5L2FjaC8wLzEwMwAAAAFQUFD8n9XB.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/103"
+                        },
+                        "description": "In matchmaking, score by throwing the ball from 30 meters in Ricochet.",
+                        "gamerscore": 25,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 186,
+                        "title": "Repeat Survivor",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/JT/4S/1jc8P2NhbC9ACgVLBRxYWlA5L2FjaC8wLzEwNAAAAAFQUFD5PT44.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/104"
+                        },
+                        "description": "In matchmaking, survive three vehicle explosions in a row with the Survivor package.",
+                        "gamerscore": 25,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 187,
+                        "title": "Can&rsquo;t Catch Me",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/ts/by/1zc8P2NhbC9BCgVLBRxYWlA5L2FjaC8wLzEwNQAAAAFQUFD43car.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/105"
+                        },
+                        "description": "In matchmaking, score a goal in Ricochet while taking damage with the Resistor active.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 188,
+                        "title": "Just a Scratch",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/A8/-T/1Tc8P2NhbC9CCgVLBRxYWlA5L2FjaC8wLzEwNgAAAAFQUFD6-M8e.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/10"
+                        },
+                        "description": "In matchmaking, recover full shields from low health with both Resistor and Recharge active.",
+                        "gamerscore": 20,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 189,
+                        "title": "Pitchin&#039; a Tent",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/kD/cz/1Dc8P2NhbC9DCgVLBRxYWlA5L2FjaC8wLzEwNwAAAAFQUFD7HDeN.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/107"
+                        },
+                        "description": "In matchmaking, effectively camp one location without dying for a full 60 seconds.",
+                        "gamerscore": 40,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 190,
+                        "title": "One Man Army",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/ni/MU/1zc8P2NhbC9MCgVLBRxYWlA5L2FjaC8wLzEwOAAAAAFQUFD4OyOD.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/108"
+                        },
+                        "description": "In matchmaking, get four consecutive kills with the Rocket Launcher without dying.",
+                        "gamerscore": 27,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    },
+                    {
+                        "id": 191,
+                        "title": "Shocking",
+                        "artwork": {
+                            "locked": "https://live.xbox.com/tiles/Dd/v0/1jc8P2NhbC9NCgVLBRxYWlA5L2FjaC8wLzEwOQAAAAFQUFD529sQ.jpg",
+                            "unlocked": "https://image-ssl.xboxlive.com/global/t.4d530919/ach/0/109"
+                        },
+                        "description": "In Bullseye DLC matchmaking, activate both electrical surge systems during a match on Vertigo.",
+                        "gamerscore": 10,
+                        "secret": false,
+                        "unlocked": false,
+                        "unlockdate": null,
+                        "unlockedoffline": null
+                    }
+                ],
+                "freshness": "new"
+            },
+            "runtime": 3.38
+        }
+    http_version: '1.1'
+  recorded_at: Sat, 03 May 2014 02:00:44 GMT
+recorded_with: VCR 2.9.0

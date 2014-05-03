@@ -16,28 +16,41 @@ describe XboxLeaders::Api do
   context 'making requests' do
     it 'validates the gamertag' do
       api = XboxLeaders::Api.new
-      lambda { api.fetch_profile('Major Nelson') }.should_not raise_exception
-      lambda { api.fetch_profile('fajdkfjdife99fgsd<F2>') }.should raise_exception
+      VCR.use_cassette('profile') do
+        lambda { api.fetch_profile('Major Nelson') }.should_not raise_exception
+      end
+
+      VCR.use_cassette('bad_profile') do
+        lambda { api.fetch_profile('fajdkfjdife99fgsd<F2>') }.should raise_exception
+      end
     end
 
     it 'fetches a profile' do
-      response = XboxLeaders::Api.new.fetch_profile('Major Nelson')
-      response['gamertag'].should == 'Major Nelson'
+      VCR.use_cassette('profile') do
+        response = XboxLeaders::Api.new.fetch_profile('Major Nelson')
+        response['gamertag'].should == 'Major Nelson'
+      end
     end
 
     it 'fetches a list of games' do
-      response = XboxLeaders::Api.new.fetch_games('Major Nelson')
-      response['games'].count.should be > 0
+      VCR.use_cassette('games') do
+        response = XboxLeaders::Api.new.fetch_games('Major Nelson')
+        response['games'].count.should be > 0
+      end
     end
 
     it 'fetches a list of achievements' do
-      response = XboxLeaders::Api.new.fetch_achievements('Major Nelson', '1297287449')
-      response['game'].should_not be_nil
+      VCR.use_cassette('achievements') do
+        response = XboxLeaders::Api.new.fetch_achievements('Major Nelson', '1297287449')
+        response['game'].should_not be_nil
+      end
     end
 
     it 'fetches a list of friends' do
-      response = XboxLeaders::Api.new.fetch_friends('Major Nelson')
-      response['total'].should be > 0
+      VCR.use_cassette('friends') do
+        response = XboxLeaders::Api.new.fetch_friends('Major Nelson')
+        response['total'].should be > 0
+      end
     end
   end
 end
